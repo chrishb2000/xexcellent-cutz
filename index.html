@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Excellent Cutz - The best barbershop in Miami. Professional haircuts, beard trims, and classic shaves.">
+    <meta name="keywords" content="barbershop, miami, haircut, beard, shave, excellent cutz">
+    <meta name="author" content="Excellent Cutz">
+    <title>Excellent Cutz - The Best Barbershop in Miami</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-cut"></i>
+                <span>Excellent Cutz</span>
+            </a>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="#services" class="nav-link" data-i18n="nav.services">Services</a></li>
+                <li><a href="#gallery" class="nav-link" data-i18n="nav.gallery">Gallery</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                <li>
+                    <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
+                        <span class="lang-option active" data-lang="en">EN</span>
+                        <span class="lang-divider">/</span>
+                        <span class="lang-option" data-lang="es">ES</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero" id="home">
+        <!-- Carousel Slider -->
+        <div class="hero-carousel">
+            <div class="carousel-slide active" style="background-image: url('images/Excellent-Cutz_3b4c2823b90a2ea7ec55c72645c76625.webp');"></div>
+            <div class="carousel-slide" style="background-image: url('images/622334656_18303910591285420_5260635467426922271_n.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('images/622732553_18192547726341960_7665706265206078128_n.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('images/624209390_18066752495538889_4433605581937683624_n.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('images/625427896_18199323046331756_427215664201768475_n.jpg');"></div>
+            
+            <!-- Carousel Controls -->
+            <button class="carousel-control prev" id="carousel-prev" aria-label="Previous slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-control next" id="carousel-next" aria-label="Next slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators" id="carousel-indicators">
+                <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
+                <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
+                <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
+                <button class="indicator" data-slide="3" aria-label="Go to slide 4"></button>
+                <button class="indicator" data-slide="4" aria-label="Go to slide 5"></button>
+            </div>
+        </div>
+        
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+        
+            <h1 data-i18n="hero.title">Excellent Cutz</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">The Best Barbershop in Miami</p>
+            <div class="hero-rating">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="rating-text" data-i18n="hero.rating">4.8 ★★★★★ (69 reviews)</span>
+            </div>
+            <p class="hero-intro" data-i18n="hero.intro">Experience the art of traditional barbering with a modern touch. Our skilled barbers are dedicated to giving you the perfect cut and style.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/13055551234" class="btn btn-primary" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-i18n="hero.book">Book Your Appointment</span>
+                </a>
+                <a href="#services" class="btn btn-secondary" data-i18n="hero.services">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title" data-i18n="about.title">About Excellent Cutz</h2>
+                    <p class="about-intro" data-i18n="about.intro">
+                        Excellent Cutz stands out as a premier barbershop in Miami, renowned for its inviting atmosphere and exceptional service.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-store"></i>
+                            <h3 data-i18n="about.features.atmosphere.title">Vibrant Atmosphere</h3>
+                            <p data-i18n="about.features.atmosphere.desc">The shop's vibrant decor and meticulous attention to detail create a visually appealing environment that welcomes men, women, and children alike.</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="fas fa-cut"></i>
+                            <h3 data-i18n="about.features.barbers.title">Expert Barbers</h3>
+                            <p data-i18n="about.features.barbers.desc">Customers frequently highlight the professionalism and skill of our barbers, including renowned talents like Robert and Leo, celebrated for their sharp styles and precision cuts.</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="fas fa-list-ul"></i>
+                            <h3 data-i18n="about.features.services.title">Diverse Services</h3>
+                            <p data-i18n="about.features.services.desc">From haircuts and beard trims to eyebrow shaping and shampooing, we cater to a wide array of grooming needs for the whole family.</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="fas fa-tv"></i>
+                            <h3 data-i18n="about.features.comfort.title">Comfortable Experience</h3>
+                            <p data-i18n="about.features.comfort.desc">Patrons appreciate the comfortable setting, complete with televisions and music, making each visit a relaxing experience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">4.8</span>
+                            <span class="stat-label" data-i18n="about.stats.rating">Rating</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">69+</span>
+                            <span class="stat-label" data-i18n="about.stats.reviews">Reviews</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label" data-i18n="about.stats.satisfaction">Satisfaction</span>
+                        </div>
+                    </div>
+                    
+                    <p class="about-loyalty" data-i18n="about.loyalty">
+                        Many customers express their loyalty, noting that they have been returning for years, which speaks volumes about the quality and consistency of service provided.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services.title">Our Services</h2>
+            <p class="section-subtitle" data-i18n="services.subtitle">Professional grooming services for the modern gentleman</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 data-i18n="services.haircut.title">Haircut</h3>
+                    <p data-i18n="services.haircut.desc">Precision haircut tailored to your style. Includes wash, cut, and styling.</p>
+                    <span class="service-price" data-i18n="services.haircut.price">from $25</span>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 data-i18n="services.beard.title">Beard Trim</h3>
+                    <p data-i18n="services.beard.desc">Professional beard shaping and trimming with razor line-up.</p>
+                    <span class="service-price" data-i18n="services.beard.price">from $15</span>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-soap"></i>
+                    </div>
+                    <h3 data-i18n="services.shave.title">Classic Shave</h3>
+                    <p data-i18n="services.shave.desc">Traditional hot towel shave with straight razor for a smooth finish.</p>
+                    <span class="service-price" data-i18n="services.shave.price">from $30</span>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 data-i18n="services.kids.title">Kids Haircut</h3>
+                    <p data-i18n="services.kids.desc">Gentle and patient haircut service for children of all ages.</p>
+                    <span class="service-price" data-i18n="services.kids.price">from $20</span>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 data-i18n="services.color.title">Hair Color</h3>
+                    <p data-i18n="services.color.desc">Professional hair coloring, highlights, and gray blending services.</p>
+                    <span class="service-price" data-i18n="services.color.price">from $40</span>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 data-i18n="services.full.title">Full Service</h3>
+                    <p data-i18n="services.full.desc">Complete grooming package: haircut, beard trim, and facial treatment.</p>
+                    <span class="service-price" data-i18n="services.full.price">from $60</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title" data-i18n="gallery.title">Our Gallery</h2>
+            <p class="section-subtitle" data-i18n="gallery.subtitle">See the quality of our work and shop atmosphere</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/622334656_18303910591285420_5260635467426922271_n.jpg" alt="Excellent Cutz storefront" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Excellent-Cutz_3b4c2823b90a2ea7ec55c72645c76625.webp" alt="Barbershop interior" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Excellent-Cutz_5f55aaff5178260e2e5555c974e48d2e.webp" alt="Barber shop view" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/624209390_18066752495538889_4433605581937683624_n.jpg" alt="Professional barber cutting hair" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/625427896_18199323046331756_427215664201768475_n.jpg" alt="Barber styling client" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/622732553_18192547726341960_7665706265206078128_n.jpg" alt="Barber with headphones at work" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/622837933_18304645984257218_5765644618532773478_n.jpg" alt="Barber and client smiling" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/630177670_18505302151073766_4173874335495512355_n.jpg" alt="Precision haircut with clippers" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/630561576_18381212017093560_7451675988467388298_n.jpg" alt="Barber trimming beard" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/640434683_18564971296013654_4650829788857518950_n.jpg" alt="Kids haircut specialist" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/54447075_1296510907169704_7322067547347485781_n.jpg" alt="Fresh haircut styled" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Excellent-Cutz_8e631706bb2908864266b90c953def37.webp" alt="Barber cutting with precision" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Contact Us</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">Visit us or get in touch</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-i18n="contact.address.title">Address</h4>
+                            <p data-i18n="contact.address.text">198 South Ct, Miami, FL 33147, United States</p>
+                            <p class="contact-detail" data-i18n="contact.address.detail">Located at: Northside Shopping Center</p>
+                            <p class="contact-detail" data-i18n="contact.address.plus">Plus Code: RQW4+X9 Miami, Florida</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-i18n="contact.phone.title">Phone</h4>
+                            <a href="tel:+13055551234">+1 (305) 555-1234</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-i18n="contact.email.title">Email</h4>
+                            <a href="mailto:info@xcellentcutz.com">info@xcellentcutz.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4 data-i18n="contact.hours.title">Hours</h4>
+                            <p data-i18n="contact.hours.text">Mon – Sat: 9:00 AM – 7:00 PM</p>
+                            <p class="contact-detail" data-i18n="contact.hours.sunday">Sunday: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/xcellentcutz/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/13055551234" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.6666666666665!2d-80.2108!3d25.8520!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b8a1f0c2e2e3%3A0x1234567890abcdef!2s198%20South%20Ct%2C%20Miami%2C%20FL%2033147!5e0!3m2!1sen!2sus!4v1234567890"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Google Maps Location">
+                    </iframe>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <h3 data-i18n="contact.form.title">Send us a message</h3>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name" data-i18n="contact.form.name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email" data-i18n="contact.form.email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message" data-i18n="contact.form.message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <i class="fas fa-cut"></i>
+                        <span>Excellent Cutz</span>
+                    </a>
+                    <p data-i18n="footer.tagline">The Best Barbershop in Miami</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 data-i18n="footer.quicklinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                        <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                        <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-legal">
+                    <h4 data-i18n="footer.legal">Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="cookies.html" data-i18n="footer.cookies">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> Excellent Cutz. <span data-i18n="footer.rights">All rights reserved.</span></p>
+                <p class="footer-credits">
+                    <span data-i18n="footer.designed">Designed by</span> 
+                    <a href="https://christian-freelance.us/" target="_blank" rel="noopener" class="credits-link">
+                        <i class="fas fa-code"></i> Christian Freelance
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/13055551234?text=Hello,%20I%20would%20like%20to%20book%20an%20appointment" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener"
+       aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">
+            <i class="fas fa-times"></i>
+        </button>
+        <img src="" alt="" id="lightbox-img">
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

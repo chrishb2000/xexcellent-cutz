@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="48" fill="#1a1a1a"/>
+  
+  <!-- Outer Ring -->
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#d4af37" stroke-width="3"/>
+  
+  <!-- Scissors Left Blade -->
+  <path d="M35 30 L50 50 L35 70" fill="none" stroke="#d4af37" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Scissors Right Blade -->
+  <path d="M65 30 L50 50 L65 70" fill="none" stroke="#d4af37" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Scissors Left Handle -->
+  <circle cx="35" cy="75" r="8" fill="none" stroke="#d4af37" stroke-width="4"/>
+  
+  <!-- Scissors Right Handle -->
+  <circle cx="65" cy="75" r="8" fill="none" stroke="#d4af37" stroke-width="4"/>
+  
+  <!-- Center Pivot -->
+  <circle cx="50" cy="50" r="5" fill="#d4af37"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="50" cy="20" r="3" fill="#d4af37"/>
+  <circle cx="25" cy="40" r="2" fill="#d4af37"/>
+  <circle cx="75" cy="40" r="2" fill="#d4af37"/>
+</svg>
